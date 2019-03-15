@@ -20,17 +20,17 @@ class ExampleComponent extends Component {
           Example
         </strong>
         <br />
-          {this.props.clicked === "yes" ?
-
-            {text}
-          :
-            "Not Clicked"
-          }
+          {this.props.clicked === "yes" ? <div> {text} </div> : "Show me"}
       </div>
 
     )
   }
 
 }
-
+// {this.props.clicked === "yes" ?
+//
+//   {text}
+// :
+//   "Not Clicked"
+// }
 export default ExampleComponent;
