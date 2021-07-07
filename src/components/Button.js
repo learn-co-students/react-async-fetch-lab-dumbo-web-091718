@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
 
-class ExampleComponent extends Component {
+class Button extends Component {
 
   render() {
+    console.log(this.props);
     return (
-      <button onClick={this.handleClick}>
-        I am a button
-      </button>
-    )
-  }
+      <div>
 
-  handleClick(event) {
-    console.log(event.target.innerHTML)
+        <button onClick={(e) => this.props.handleClick(e)}>
+          I am a button
+        </button>
+      </div>
+    )
   }
 
 }
 
-export default ExampleComponent;
+export default Button;
